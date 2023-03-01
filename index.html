@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELLA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <!-- font awesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- .font awesome icon cdn -->
+
+</head>
+
+<body class="overflow-x-hidden text-[#000000]" style="font-family: 'DM Sans', sans-serif;">
+
+    <!-- Header section -->
+    <header class="header h-auto px-4 z-50 fixed top-0 left-0 right-0 transition-all ease-in-out duration-1000">
+        <div class="container m-auto p-3 sm:p-6">
+            <nav class="flex items-center justify-between">
+                <div class="logo">
+                    <div
+                        class="bg-[#FEE4AF4D] backdrop-blur-sm w-[500px] h-[500px] rounded-full absolute -ml-[245px] -mt-[320px] -z-10">
+                    </div>
+                    <h4 class="text-[#178B40] text-xl font-bold">CELLA</h4>
+                </div>
+                <div
+                    class="navbar absolute bg-[#d1bc9265] md:bg-transparent backdrop-blur-lg md:backdrop-blur-none shadow-2xl md:shadow-none rounded-md md:relative top-28 left-0 right-0 w-[90%] h-96 m-auto md:m-0 md:h-auto md:w-auto md:top-0 hidden md:block z-10">
+                    <div class="">
+                        <ul
+                            class="text-[#000000] text-lg font-medium text-center py-6 md:py-0 md:space-y-0 space-y-4 md:flex items-center md:space-x-9">
+                            <li
+                                class="hover:text-[#fff] hover:bg-[#178B40] p-3 rounded-md md:rounded-none transition-all ease-in-out duration-500 cursor-pointer md:hover:text-[#7c7575] md:hover:border-b-[#178B40] md:border-b-transparent md:border-b-4 md:hover:bg-transparent">
+                                Home</li>
+                            <li
+                                class="hover:text-[#fff] hover:bg-[#178B40] p-3 rounded-md md:rounded-none transition-all ease-in-out duration-500 cursor-pointer md:hover:text-[#7c7575] md:hover:border-b-[#178B40] md:border-b-transparent md:border-b-4 md:hover:bg-transparent">
+                                Blog</li>
+                            <li
+                                class="hover:text-[#fff] hover:bg-[#178B40] p-3 rounded-md md:rounded-none transition-all ease-in-out duration-500 cursor-pointer md:hover:text-[#7c7575] md:hover:border-b-[#178B40] md:border-b-transparent md:border-b-4 md:hover:bg-transparent">
+                                Contact</li>
+                            <button
+                                class="text-xl font-bold bg-[#178B40] w-[178px] h-[50px] rounded-[30px] text-white hover:transform hover:scale-105 transition-all ease-in-out duration-500"
+                                type="button">Get Started</button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-[#178B40] w-14 h-14 text-center p-2 py-3 bg-[#FEE4AF4D] rounded-md shadow-2xl cursor-pointer bars"
+                        onclick="menuNav()"></i>
+                    <i class="fas fa-times text-2xl text-[#178B40] w-14 h-14 text-center p-2 py-3 bg-[#FEE4AF4D] rounded-md shadow-2xl cursor-pointer times hidden"
+                        onclick="menuNav()"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- .Header section -->
+
+    <!-- Grow section -->
+    <section class="Grow my-40 lg:my-52 lg:mb-20 mb-10">
+        <div class="container m-auto p-3 sm:p-6">
+            <div class="wrapper lg:flex lg:space-x-16">
+                <div class="text-wrapper lg:w-[44%]">
+                    <div
+                        class="head text-4xl sm:text-[54px] sm:leading-[65.34px] text-[#178B40] font-bold text-center lg:text-left">
+                        <h1>Grow <br /> your Agribusiness.</h1>
+                    </div>
+                    <div
+                        class="para text-base sm:text-lg text-[#000000] my-7 font-normal xl:mr-32 text-center lg:text-left">
+                        <p>Online modern agribusiness training by experts.
+                            Community to share knowledge and financial
+                            information to grow your business.</p>
+                    </div>
+                    <div class="join mt-16 lg:mt-32">
+                        <div class="para text-base text-[#000000] my-7 font-normal xl:mr-32 text-center lg:text-left">
+                            <p>Join <span class="text-[#178B40] font-semibold">1025</span> Agriprenuers waiting for the
+                                revolution</p>
+                        </div>
+                        <div class="community flex items-center justify-center flex-col -rotate-3 my-10 lg:hidden">
+                            <div class="flex">
+                                <img class="w-14 h-14 object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4"
+                                    src="img/agric5.png" alt="image">
+                                <img class="w-14 h-14 object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                    src="img/agric6.png" alt="image">
+                                <img class="w-14 h-14 object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                    src="img/agric7.png" alt="image">
+                                <img class="w-14 h-14 object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                    src="img/agric8.png" alt="image">
+                                <img class="w-14 h-14 object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                    src="img/agric9.png" alt="image">
+                            </div>
+                            <div class="para text-base text-[#178B40] mt-4 font-medium text-center lg:text-left">
+                                <p>Join over 1k+ community</p>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <form
+                                class="border lg:w-[85%] bg-[#fafffc] border-[#178B40] p-3 rounded-full flex items-center justify-between hover:ring-2 hover:ring-[#178B40] transition-all ease-in-out duration-500">
+                                <input type="email"
+                                    class="w-[66%] sm:w-[70%] h-full outline-none p-1 placeholder:text-base placeholder:font-normal bg-[#fafffc] "
+                                    placeholder="Email Address">
+                                <button
+                                    class="text-base font-medium bg-[#178B40] px-4 py-2 rounded-[30px] text-white hover:bg-[#178b40b6] transition-all ease-in-out duration-500 tracking-wide"
+                                    type="button">Get Started</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper lg:w-[56%] hidden lg:block">
+                    <div class="flex">
+                        <div class="space-y-11 mr-3">
+                            <img class="w-[563px] h-[333px] object-cover bg-fixed bg-no-repeat bg-center bg-cover rounded-tl-none rounded-[60px]"
+                                src="img/agric1.png" alt="image">
+                            <img class="w-[540px] h-[321px] object-cover bg-fixed bg-no-repeat bg-center bg-cover rounded-tl-none rounded-[60px]"
+                                src="img/agric3.png" alt="image">
+                        </div>
+                        <div class="space-y-11 ">
+                            <div class="community flex items-center justify-center flex-col -rotate-3">
+                                <div class="flex">
+                                    <img class="w-[52.07px] h-[52.07px] object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4"
+                                        src="img/agric5.png" alt="image">
+                                    <img class="w-[52.07px] h-[52.07px] object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                        src="img/agric6.png" alt="image">
+                                    <img class="w-[52.07px] h-[52.07px] object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                        src="img/agric7.png" alt="image">
+                                    <img class="w-[52.07px] h-[52.07px] object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                        src="img/agric8.png" alt="image">
+                                    <img class="w-[52.07px] h-[52.07px] object-cover rounded-full ring ring-[#178B40] bg-no-repeat bg-center bg-cover cursor-pointer hover:ring-4 -ml-3"
+                                        src="img/agric9.png" alt="image">
+                                </div>
+                                <div class="para text-base text-[#178B40] mt-4 font-medium text-center lg:text-left">
+                                    <p>Join over 1k+ community</p>
+                                </div>
+                            </div>
+                            <img class="w-[540px] h-[321px] object-cover bg-fixed bg-no-repeat bg-center bg-cover rounded-tl-none rounded-[60px]"
+                                src="img/agric2.png" alt="image">
+                            <img class="w-[540px] h-[321px] object-cover bg-fixed bg-no-repeat bg-center bg-cover rounded-tl-none rounded-[60px]"
+                                src="img/agric4.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .Grow section -->
+
+    <!-- Agric section -->
+    <section class="Agric-card px-5 sm:px-0">
+        <div class="container m-auto p-3 sm:p-6">
+            <div class="card-wrapper flex items-center justify-between flex-wrap xl:flex-nowrap">
+                <div
+                    class="card1 p-6 bg-[#dfdfdfa2] border border-gray-300 sm:w-[351px] sm:h-[220px] rounded-2xl space-y-3 sm:py-12 mx-auto m-3">
+                    <img src="img/Agric-icon.png" class="w-[49px] h-[45] m-auto xl:m-0" alt="image">
+                    <h1 class="text-xl font-medium text-black text-center xl:text-left">Agric Business Expert Instructor
+                    </h1>
+                    <p class="text-xs text-black font-normal text-center xl:text-left">You receive expert training and
+                        guidance on your execution through mentorship.</p>
+                </div>
+                <div
+                    class="card2 p-6 bg-[#dfdfdfa2] border border-gray-300 sm:w-[351px] sm:h-[220px] rounded-2xl space-y-3 sm:py-12 mx-auto m-3">
+                    <img src="img/Agric-icon.png" class="w-[49px] h-[45] m-auto xl:m-0" alt="image">
+                    <h1 class="text-xl font-medium text-black text-center xl:text-left">Agric Business Expert Instructor
+                    </h1>
+                    <p class="text-xs text-black font-normal text-center xl:text-left">You receive expert training and
+                        guidance on your execution through mentorship.</p>
+                </div>
+                <div
+                    class="card3 p-6 bg-[#dfdfdfa2] border border-gray-300 sm:w-[351px] sm:h-[220px] rounded-2xl space-y-3 sm:py-12 mx-auto m-3">
+                    <img src="img/Agric-icon.png" class="w-[49px] h-[45] m-auto xl:m-0" alt="image">
+                    <h1 class="text-xl font-medium text-black text-center xl:text-left">Agric Business Expert Instructor
+                    </h1>
+                    <p class="text-xs text-black font-normal text-center xl:text-left">You receive expert training and
+                        guidance on your execution through mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .Agric section -->
+
+
+    <!-- Create section -->
+    <section class="Create bg-[#FFC700] my-5">
+        <div class="container m-auto p-3 sm:px-6">
+            <div class="text-center py-[105px] space-y-8">
+                <div
+                    class="head text-[35px] leading-[45px] md:text-[45px] lg:text-[50px] md:leading-[55px] lg:leading-[60px] font-bold">
+                    <h1>Created & built <br /> by Farmers, for Farmers</h1>
+                </div>
+                <div class="para text-lg font-normal sm:w-[50%] sm:m-auto">
+                    <p>Our purpose is to restore Africa’s glory in the global economy through
+                        AgTech. The one we are made for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .Create section -->
+
+    <!-- Offer -->
+    <section class="Offer py-20 px-5">
+        <div class="container m-auto p-3 sm:p-6">
+            <div class="wrapper flex flex-wrap lg:flex-nowrap items-center justify-between">
+                <div class="text-wrapper lg:w-[44%] m-auto space-y-2 text-center lg:text-left">
+                    <div class="head text-base uppercase font-bold tracking-widest">
+                        <h1>What we offer</h1>
+                    </div>
+                    <div
+                        class="head lg:w-[68%] text-4xl sm:text-[45px] md:text-[50px] sm:leading-[55px] md:leading-[60px] font-bold">
+                        <h1>Take your
+                            Agribusiness
+                            to the next level.</h1>
+                    </div>
+                    <div class="para text-lg font-medium">
+                        <h1>We are bridging the modern agribusiness knowledge and
+                            information gap. For farmers and agribusiness enthusiasts
+                            to build and scale in the easiest way possible.</h1>
+                    </div>
+                </div>
+                <div class="img-wrapper lg:w-[51%] m-auto mt-6 lg:mt-0">
+                    <div class="w-[284px] h-[284px] bg-[#FEE4AF4D] rounded-full absolute right-0 -z-10"></div>
+                    <img class="w-[500px] h-[433px] object-cover rounded-[60px] rounded-tr-none shadow-2xl lg:ml-32"
+                        src="img/Agric-11.png" alt="image">
+                    <div
+                        class="w-[163px] h-[163px] bg-[#00A83B4D] rounded-full -mt-52 relative -left-12 lg:left-auto lg:-right-12 -z-10">
+                    </div>
+                </div>
+            </div>
+            <div class="last-wrapper"></div>
+        </div>
+    </section>
+    <!-- .Offer -->
+
+    <!-- Grow section -->
+    <section class="Grow bg-[#00A83B] my-5">
+        <div class="container m-auto p-3 sm:px-6">
+            <div class="text-center text-[#fff] py-[105px] space-y-8">
+                <div
+                    class="head text-[35px] leading-[45px] md:text-[45px] lg:text-[50px] md:leading-[55px] lg:leading-[60px] font-semibold xl:w-[70%] xl:m-auto">
+                    <h1>“The <span class="text-[#FFC700]">easiest</span> and most sustainable
+                        way to <span class="text-[#FFC700]">grow</span> your Agribusiness.”</h1>
+                </div>
+                <div class="para tracking-wide font-thin text-lg">
+                    <p>All you need to build a successful business, career, and investment in Agribusiness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .Grow section -->
+
+    <!-- Why section -->
+    <section class="Why px-6">
+        <div class="container m-auto p-3 sm:p-6">
+            <div class="head text-center text-3xl sm:text-5xl font-bold">
+                <h1 class="my-10 sm:my-20">Why use Cella?</h1>
+                <div>
+                    <div class="wrapper lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-5 space-y-8 lg:space-y-0">
+                        <div
+                            class="card1 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                        <div
+                            class="card2 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                        <div
+                            class="card3 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                        <div
+                            class="card4 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                        <div
+                            class="card5 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                        <div
+                            class="card6 p-6 px-5 bg-[#dfdfdfa2] border border-gray-300 lg:w-[389px] lg:h-[367px] rounded-2xl space-y-3 m-auto">
+                            <img src="img/Agric-icon2.png" class="w-[101px] h-[91px] m-auto lg:m-0" alt="image">
+                            <h1 class="text-xl sm:text-2xl font-semibold text-black text-center lg:text-left">Flexible
+                                Online Training</h1>
+                            <p class="text-center lg:text-left text-sm sm:text-base text-[#000000] font-medium">Get
+                                access to on-demand, easy-to-follow, practical-based video courses. And other
+                                materials tailored to your needs to improve profitability, even if you’re new to
+                                agribusiness.
+                                Study anywhere, at your pace.</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- .Why section -->
+
+    <!-- Tutor section -->
+    <section class="Tutor bg-[#AAD7BA] shadow-2xl">
+        <div class="container m-auto px-4 py-8 sm:p-8 md:p-24">
+            <div
+                class="wrapper flex flex-wrap justify-center lg:justify-between lg:flex-nowrap items-center space-y-10 lg:space-x-12">
+                <div class="img-wrapper lg:w-[50%]">
+                    <div class="w-full px-8 lg:w-[492px] h-[513px] bg-[#00A83B] rounded-[60px] rounded-tl-none">
+                        <div
+                            class="w-full lg:w-[386px] px-4 lg:px-0 h-[369px] bg-[#FFC700] rounded-[50px] rounded-bl-[50px] rounded-tl-none relative top-28 m-auto">
+                            <img class="relative h-full sm:h-auto sm:bottom-[95px] m-auto w-[334px] object-contain bg-center bg-cover"
+                                src="img/Agric-100.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-wrapper lg:pl-20 lg:w-[50%] space-y-6">
+                    <div
+                        class="head text-3xl sm:text-4xl md:text-[40px] md:leading-[48px] font-bold text-center lg:text-left">
+                        <h1>Become a Tutor</h1>
+                    </div>
+                    <div class="para font-medium text-lg sm:text-[20.5px] sm:leading-[30px] text-center lg:text-left">
+                        <p>Join us in building a community for Africa’s
+                            prosperity in AgTech. We provide the tools
+                            and support to help you teach what you love.</p>
+                    </div>
+                    <div class="m-auto w-fit lg:m-0 lg:w-auto">
+                        <button
+                            class="h-[60px] px-10 sm:px-2 sm:w-96 p-2 text-white font-normal text-sm bg-[#00A83B] hover:bg-[rgba(0,168,59,0.61)] rounded-full transition-all ease-in-out duration-500 tracking-wider"
+                            type="submit">Become an Agcademy instructor</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .Tutor section -->
+
+    <!-- Footer -->
+    <footer class="my-36 mb-24">
+        <div class="container m-auto p-3 sm:p-6">
+            <div class="wrappper flex flex-wrap md:flex-nowrap justify-between md:justify-start space-y-8 md:space-y-0">
+                <div class="first-wrapper md:w-[30%] space-y-8">
+                    <h1 class="text-lg sm:text-xl font-medium">Modern agribusiness training and
+                        financial accessibility in one platform.
+                        We are building a community for
+                        African prosperity in AgTech.</h1>
+                    <div class="icons space-x-4">
+                        <i
+                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-twitter"></i>
+                        <i
+                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-facebook"></i>
+                        <i
+                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-instagram"></i>
+                        <i
+                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-facebook"></i>
+                    </div>
+                    <div class="logo pt-8">
+                        <h4 class="text-[#178B40] text-xl font-bold">CELLA</h4>
+                    </div>
+
+                </div>
+                <div class="second-wrapper md:w-[21%] md:ml-[133px]">
+                    <h1 class="text-lg sm:text-xl font-bold">Products</h1>
+                    <div class="text-sm font-medium mt-4">
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Courses</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Live Events</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Resource Kits</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Instructor Guides</p>
+                        <p
+                            class="mt-10 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer font-bold">
+                            Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="last-wrapper md:w-[12%]">
+                    <h1 class="text-lg sm:text-xl font-bold">Company</h1>
+                    <div class="text-sm font-medium mt-4">
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            About Us</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Our Culture</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            FAQs</p>
+                        <p
+                            class="py-1 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer">
+                            Blog</p>
+                        <p
+                            class="mt-10 hover:underline hover:text-[#928e8e] transition-all ease-in-out duration-300 cursor-pointer font-bold">
+                            Terms of Use</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- .Footer -->
+
+    <script>
+        let toggleNavBar = true;
+        let menuNav = () => {
+            let getNav = document.querySelector('.navbar');
+            let getBars = document.querySelector('.bars');
+            let getTimes = document.querySelector('.times')
+
+            if (toggleNavBar) {
+                getNav.style.display = "block";
+                getBars.style.display = "none";
+                getTimes.style.display = "block";
+            } else {
+                getNav.style = "hidden"
+                getTimes.style.display = "none";
+                getBars.style.display = "block";
+            }
+            toggleNavBar = !toggleNavBar;
+        }
+
+        window.onscroll = function () {
+            let getHeader = document.querySelector('.header');
+            var top = window.scrollY;
+
+            if (top >= 100) {
+                getHeader.style.background = '#ffffff'
+            } else {
+                getHeader.style.background = 'transparent'
+            }
+        }
+
+    </script>
+
+    <script src="tailwind.config.js"></script>
+</body>
+
+</html>
