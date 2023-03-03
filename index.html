@@ -28,7 +28,7 @@
             <nav class="flex items-center justify-between">
                 <div class="logo">
                     <div
-                        class="bg-[#FEE4AF4D] backdrop-blur-sm w-[500px] h-[500px] rounded-full absolute -ml-[245px] -mt-[320px] -z-10">
+                        class="bg-[#FEE4AF4D] header-cover backdrop-blur-sm w-[500px] h-[500px] rounded-full absolute -ml-[245px] -mt-[320px] -z-10 transition-all ease-in-out duration-1000">
                     </div>
                     <h4 class="text-[#178B40] text-xl font-bold">CELLA</h4>
                 </div>
@@ -204,7 +204,7 @@
 
     <!-- Offer -->
     <section class="Offer py-20 px-5">
-        <div class="container m-auto p-3 sm:p-6">
+        <div class="container m-auto p-3 sm:p-6 space-y-24">
             <div class="wrapper flex flex-wrap lg:flex-nowrap items-center justify-between">
                 <div class="text-wrapper lg:w-[44%] m-auto space-y-2 text-center lg:text-left">
                     <div class="head text-base uppercase font-bold tracking-widest">
@@ -231,7 +231,28 @@
                     </div>
                 </div>
             </div>
-            <div class="last-wrapper"></div>
+            <div class="last-wrapper my-8 flex flex-wrap lg:flex-nowrap items-center md:justify-between md:w-[80%] md:m-auto space-y-10 lg:space-y-0 lg:space-x-4">
+                <div class="lg:w-[488px] lg:h-[228px] border border-[#CECECE] py-10 lg:py-[32px] px-5 lg:px-[20px] rounded-md">
+                    <img class="w-[75px] h-[58px] m-auto lg:m-0" src="img/Agric-icon3.png" alt="image">
+                    <div class="head text-xl sm:text-2xl font-medium text-center lg:text-left">
+                        <h1>Decentralized Courses</h1>
+                    </div>
+                    <div class="para text-sm sm:text-base font-normal text-center lg:text-left">
+                        <h1>To increase the growth of agric farmers and food 
+                            landscape in Africa, a decentralised online education</h1>
+                    </div>
+                </div>
+                <div class="lg:w-[488px] lg:h-[228px] border border-[#CECECE] py-10 lg:py-[32px] px-5 lg:px-[20px] rounded-md">
+                    <img class="w-[75px] h-[58px] m-auto lg:m-0" src="img/Agric-icon4.png" alt="image">
+                    <div class="head text-xl sm:text-2xl font-medium text-center lg:text-left">
+                        <h1>Agric Financing</h1>
+                    </div>
+                    <div class="para text-sm sm:text-base font-normal text-center lg:text-left">
+                        <h1>To increase the growth of agric farmers and food landscape 
+                            in Africa, a decentralised online education</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- .Offer -->
@@ -383,7 +404,7 @@
                         <i
                             class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-instagram"></i>
                         <i
-                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-facebook"></i>
+                            class="text-white p-3 bg-[#00A83B] hover:transform hover:scale-105 transition-all ease-in-out duration-500 rounded-full cursor-pointer fab fa-linkedin"></i>
                     </div>
                     <div class="logo pt-8">
                         <h4 class="text-[#178B40] text-xl font-bold">CELLA</h4>
@@ -456,12 +477,15 @@
 
         window.onscroll = function () {
             let getHeader = document.querySelector('.header');
+            let getHeaderCover = document.querySelector('.header-cover');
             var top = window.scrollY;
 
             if (top >= 100) {
                 getHeader.style.background = '#ffffff'
+                getHeaderCover.style.display = 'none'
             } else {
                 getHeader.style.background = 'transparent'
+                getHeaderCover.style.display = 'block'
             }
         }
 
